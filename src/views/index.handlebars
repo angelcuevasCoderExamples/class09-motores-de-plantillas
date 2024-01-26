@@ -1,0 +1,18 @@
+<div>
+    <h1> Hello, {{user.name}}!!! </h1>
+</div>
+
+<div>
+    <h1>Usuario</h1>
+    <p>Nombre: {{user.name}}</p>
+    <p>Apellido: {{user.lastname}}</p>
+    <p>Edad: {{user.age}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Teléfono: {{user.phone}}</p>
+</div>
+
+<form action="/user" method="POST">
+    <input type="text" name="first_name" />
+    <input type="text" name="last_name" />
+    <button type="submit">Send</button> 
+</form>
